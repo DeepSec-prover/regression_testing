@@ -3,8 +3,8 @@
 function run_fast_tests {
   echo Version 1.02 > raw_outputs/fast_1.02.txt;
   for file in database/fast/*.dps; do
-    deepsec -distributed 2 -nb_sets 100 "$file" >> raw_outputs/fast_1.02.txt;
-    deepsec -distributed 2 -nb_sets 100 -semantics Classic "$file" >> raw_outputs/fast_1.02.txt;
+    deepsec -distributed 20 -nb_sets 1000 "$file" >> raw_outputs/fast_1.02.txt;
+    deepsec -distributed 20 -nb_sets 1000 -semantics Classic "$file" >> raw_outputs/fast_1.02.txt;
     deepsec "$file" >> raw_outputs/fast_1.02.txt;
   done;
   scripts/cleanup raw_outputs/fast_1.02.txt;
