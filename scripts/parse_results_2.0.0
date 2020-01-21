@@ -1,0 +1,33 @@
+#!/bin/bash
+
+echo "Version $1 - Test type $2" > formatted_outputs/$2_$1.txt;
+egrep 'Loading|not trace equivalent|not trace included|not session equivalent|not session included|trace equivalent|trace included|session equivalent|session included|Internal error|\[31mError\[0m' raw_outputs/$2_$1.txt \
+  | sed -E 's/Loading file (.*)\.\.\./\1/g' \
+  | sed -E 's/.*not trace equivalent/false\
+/g' \
+  | sed -E 's/.*not trace included/false\
+/g' \
+  | sed -E 's/.*not session equivalent/false\
+/g' \
+  | sed -E 's/.*not session included/false\
+/g' \
+  | sed -E 's/.*trace equivalent/true\
+/g' \
+  | sed -E 's/.*trace included/true\
+/g' \
+  | sed -E 's/.*session equivalent/true\
+/g' \
+  | sed -E 's/.*session included/true\
+/g' \
+  | sed -E 's/.*Verified in (< )?([a-zA-Z0-9]+) using ([0-9]+(KB|B|GB|MB)) of memory.*/Time \2\
+Memory \3/g' \
+  | sed -E 's/.*\[31mError\[0m.*/user error/g' \
+  | sed -E 's/.*Internal Error.*/internal error/g' \
+  | tr '\n' '#' \
+  | sed 's/#true/;true/g' \
+  | sed 's/#false/;false/g' \
+  | sed -E 's/#Time ([a-zA-Z0-9]*)/;\1/g' \
+  | sed -E 's/#Memory ([a-zA-Z0-9]*)/;\1/g' \
+  | sed 's/#internal error/;internal error/g' \
+  | sed 's/#user error/;user error/g' \
+  | tr '#' '\n' >> formatted_outputs/$2_$1.txt

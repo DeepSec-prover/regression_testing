@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Version 1.02 - Test type $1" > formatted_outputs/$1_1.02.txt;
+egrep 'Opening|Equivalent processes|Running time|The two processes are in session equivalence|Session-Inclusion|Syntax Error|Processes not equivalent|Internal error|Found an attack|Error!' raw_outputs/$1_1.02.txt \
+  | sed -e 's/Opening file //g' \
+  | sed 's/.*Internal error.*/Internal error/g' \
+  | sed -E 's/Running time: ([a-zA-Z0-9]*)\.?/Time \1/g' \
+  | sed 's/.*Syntax Error.*/User Error/g' \
+  | sed 's/.*Error!.*/User Error/g' \
+  | sed 's/.*Processes not equivalent.*/false/g' \
+  | sed 's/.*Session-Inclusion.*/true/g' \
+  | sed 's/.*Equivalent processes.*/true/g' \
+  | sed 's/.*The two processes are in session equivalence.*/true/g' \
+  | sed 's/.*Found an attack.*/false/g' \
+  | tr '\n' '#' \
+  | sed 's/#true/;true/g' \
+  | sed 's/#false/;false/g' \
+  | sed -E 's/#Time ([a-zA-Z0-9]*)/;\1/g' \
+  | sed 's/#Internal error/;internal error/g' \
+  | sed 's/#User Error/;user error/g' \
+  | tr '#' '\n' >> formatted_outputs/$1_1.02.txt

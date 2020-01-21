@@ -1,0 +1,62 @@
+#!/bin/bash
+
+function run_fast_tests {
+  echo Version $1 > raw_outputs/fast_$1.txt;
+  for file in database/fast/*.dps; do
+    deepsec -j 1000 "$file" >> raw_outputs/fast_$1.txt;
+    deepsec -j 1000 -s classic "$file" >> raw_outputs/fast_$1.txt;
+    deepsec -d false "$file" >> raw_outputs/fast_$1.txt;
+  done;
+  scripts/cleanup raw_outputs/fast_$1.txt;
+}
+
+function run_medium_tests {
+  echo Version $1 > raw_outputs/medium_$1.txt;
+  for file in database/medium/*.dps; do
+    deepsec -j 1000 "$file" >> raw_outputs/medium_$1.txt;
+    deepsec -j 1000 -s classic "$file" >> raw_outputs/medium_$1.txt;
+  done;
+  scripts/cleanup raw_outputs/medium_$1.txt;
+}
+
+function run_slow_tests {
+  echo Version $1 > raw_outputs/slow_$1.txt;
+  for file in database/slow/*.dps; do
+    deepsec -j 1000 "$file" >> raw_outputs/slow_$1.txt;
+  done;
+  scripts/cleanup raw_outputs/slow_$1.txt;
+}
+
+function run_above_tests {
+  echo Version $1 > raw_outputs/above_$1.txt;
+  for file in database/above/*.dps; do
+    deepsec -j 1000 "$file" >> raw_outputs/above_$1.txt;
+  done;
+  scripts/cleanup raw_outputs/above_$1.txt;
+}
+
+
+
+if [ \( \( .$1 = .all \) -o \( .$1 = .fast \) \) ]
+then
+  run_fast_tests $2;
+  scripts/parse_results_2.0.0 $2 fast;
+fi
+
+if [ \( \( .$1 = .all \) -o \( .$1 = .above \) \) ]
+then
+  run_above_tests $2;
+  scripts/parse_results_2.0.0 $2 above;
+fi
+
+if [ \( \( .$1 = .all \) -o \( .$1 = .medium \) \) ]
+then
+  run_medium_tests $2;
+  scripts/parse_results_2.0.0 $2 medium;
+fi
+
+if [ \( \( .$1 = .all \) -o \( .$1 = .slow \) \) ]
+then
+  run_slow_tests $2;
+  scripts/parse_results_2.0.0 $2 slow;
+fi

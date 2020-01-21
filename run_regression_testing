@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# To run the regression testing, the script need to be given 2 arguments:
+#   - The version of DeepSec to test
+#   - The type of files to tested.
+#
+# The current version of DeepSec that can be tested:
+#   - 1.02
+#   - 2.0.0-rc
+#   - v2.0.0-beta
+#
+# The current type of files to be tested
+#   - fast
+#   - medium
+#   - slow
+#   - above
+#   - all
+# The type 'above' cannot be applied for 1.02. The type 'all' run all the other types.
+
+if [ \( \
+      \( .$1 != .1.02 \) -a \
+      \( .$1 != .2.0.0-rc \) -a \
+      \( .$1 != .v2.0.0-beta \) \
+    \) -o \( \
+      \( .$2 != .all \) -a  \
+      \( .$2 != .slow \) -a \
+      \( .$2 != .fast \) -a \
+      \( .$2 != .medium \) -a \
+      \( .$2 != .above \) \
+    \) -o \( \
+      \( .$1 = .1.02 \) -a \
+      \( .$2 = .above \) \
+    \) ]
+then
+	echo  Usage: run_regression_testing "<version>" "<type>"
+	echo  where "<version>" can be 1.02, 2.0.0-rc, v2.0.0-beta
+	echo  where "<type>" can be all, fast, medium, slow, above, all
+  echo  Version "1.02" cannot be used with the type "above"
+	exit 2
+fi
+
+cd ../deepsec ;
+make clean ;
+git checkout $1;
+make;
+cd ../regression_testing ;
+
+if [ .$1 = .1.02 ]
+then
+  scripts/run_test_1.02 $2;
+
+else
+  scripts/run_test_2.0.0 $2 $1;
+fi
