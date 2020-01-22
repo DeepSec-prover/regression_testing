@@ -92,6 +92,13 @@ let rec compare_two_by_two title v_l (s_l:string list) i_l = match i_l with
       in
       eq_info && compare_two_by_two title v_l' s_l' (t2::q)
 
+let format_time t =
+  let regex_m = Str.regexp "m" in
+  let regex_h = Str.regexp "t" in
+
+  let t1 = Str.global_replace regex_m "min " t in
+  Str.global_replace regex_h "h " t1
+
 let rec record_time i title i_l_l =
   if List.hd i_l_l = []
   then ()
@@ -102,8 +109,8 @@ let rec record_time i title i_l_l =
           | Error -> (acc_t,acc_above,(List.tl i_l)::acc_q)
           | Good(_,t) ->
               if String.contains t 'm' || String.contains t 'm'
-              then (t::acc_t,true,(List.tl i_l)::acc_q)
-              else (t::acc_t,acc_above,(List.tl i_l)::acc_q)
+              then ((format_time t)::acc_t,true,(List.tl i_l)::acc_q)
+              else ((format_time t)::acc_t,acc_above,(List.tl i_l)::acc_q)
         ) i_l_l ([],false,[])
       in
 
