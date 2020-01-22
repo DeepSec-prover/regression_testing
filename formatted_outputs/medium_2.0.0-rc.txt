@@ -31,8 +31,8 @@ database/medium/DenningSacco-7sessions-4dishonests.dps;true;2s;91MB
 database/medium/DenningSacco-7sessions-4dishonests.dps;true;1s;90MB
 database/medium/DenningSacco.dps;true;22s;498MB
 database/medium/DenningSacco.dps;true;42s;651MB
-database/medium/helios_bpriv106.dps
-database/medium/helios_bpriv106.dps
+database/medium/helios_bpriv106.dps;internal error
+database/medium/helios_bpriv106.dps;internal error
 database/medium/helios_bpriv_vanilla.dps;false;1s;78MB
 database/medium/helios_bpriv_vanilla.dps;false;1s;78MB
 database/medium/helios_bpriv_weed.dps;true;1s;78MB;false;1s;78MB
@@ -123,3 +123,4 @@ database/medium/WideMouthFrog.dps;true;4m41s;604MB
 database/medium/WideMouthFrog.dps;true;5m1s;635MB
 database/medium/YahalomLowe-7sessions-4dishonest.dps;true;2s;98MB
 database/medium/YahalomLowe-7sessions-4dishonest.dps;true;3s;97MB
+

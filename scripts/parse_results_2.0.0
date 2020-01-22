@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Version $1 - Test type $2" > formatted_outputs/$2_$1.txt;
-egrep 'Loading|not trace equivalent|not trace included|not session equivalent|not session included|trace equivalent|trace included|session equivalent|session included|Internal error|\[31mError\[0m' raw_outputs/$2_$1.txt \
+egrep 'Loading|not trace equivalent|not trace included|not session equivalent|not session included|trace equivalent|trace included|session equivalent|session included|Internal Error|\[31mError\[0m' raw_outputs/$2_$1.txt \
   | sed -E 's/Loading file (.*)\.\.\./\1/g' \
   | sed -E 's/.*not trace equivalent/false\
 /g' \
