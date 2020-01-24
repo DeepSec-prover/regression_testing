@@ -1,7 +1,6 @@
 #!/bin/bash
 
 function run_fast_tests {
-  echo Version 1.02 > raw_outputs/fast_1.02.txt;
   for file in database/fast/*.dps; do
     deepsec -distributed 20 -nb_sets 1000 "$file" >> raw_outputs/fast_1.02.txt;
     deepsec -distributed 20 -nb_sets 1000 -semantics Classic "$file" >> raw_outputs/fast_1.02.txt;
@@ -11,20 +10,22 @@ function run_fast_tests {
 }
 
 function run_medium_tests {
-  echo Version 1.02 > raw_outputs/medium_1.02.txt;
   for file in database/medium/*.dps; do
     deepsec -distributed 20 -nb_sets 1000 "$file" >> raw_outputs/medium_1.02.txt;
     deepsec -distributed 20 -nb_sets 1000 -semantics Classic "$file" >> raw_outputs/medium_1.02.txt;
   done;
-  scripts/cleanup raw_outputs/fast_1.02.txt;
+  scripts/cleanup raw_outputs/medium_1.02.txt;
 }
 
 function run_slow_tests {
-  echo Version 1.02 > raw_outputs/slow_1.02.txt;
   for file in database/slow/*.dps; do
-    deepsec -distributed 20 -nb_sets 1000 "$file" >> raw_outputs/slow_1.02.txt;
+    grep_result=$(grep $file raw_outputs/slow_1.02.txt);
+    if [ \( "$grep_result" = "" \) ]
+    then
+      deepsec -distributed 20 -nb_sets 1000 "$file" >> raw_outputs/slow_1.02.txt;
+    fi
   done;
-  scripts/cleanup raw_outputs/fast_1.02.txt;
+  scripts/cleanup raw_outputs/slow_1.02.txt;
 }
 
 
