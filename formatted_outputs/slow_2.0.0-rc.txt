@@ -1,0 +1,25 @@
+Version 2.0.0-rc - Test type slow
+database/slow/AKA-5sessions.dps;true;1s;231MB
+database/slow/BAC-5sessions-2fresh.dps;false;7m32s;4GB
+database/slow/BAC-5sessions-2fresh-inclusion.dps;true;4m57s;3GB
+database/slow/BAC-5sessions-3fresh.dps;true;6h40m49s;17GB
+database/slow/BAC-5sessions-3fresh-inclusion.dps;true;14m2s;3GB
+database/slow/DenningSacco-11sessions-4dishonests.dps;true;9h14m24s;142MB
+database/slow/DenningSacco-18sessions-6dishonests.dps;true;4m53s;260MB
+database/slow/Helios_revote_ZKP11.dps;true;31s;95MB
+database/slow/Helios_revote_ZKP21.dps;true;11m56s;104MB
+database/slow/Helios_revote_ZKP42.dps;true;3m26s;145MB
+database/slow/Helios_revote_ZKP51.dps;true;2m35s;149MB
+database/slow/Helios_revote_ZKPmax.dps;true;1h22s;237MB
+database/slow/PA-anonimity.dps;true;1h5m58s;198GB
+database/slow/PA-unlinkability.dps;internal error
+database/slow/PrivateAuthentication.dps;true;5s;159MB
+database/slow/QBC_10qubits2.dps;false;19s;249MB
+database/slow/QBC_10qubits.dps;true;1h11m39s;2GB
+database/slow/QBC_11qubits2.dps;false;10s;273MB
+database/slow/QBC_11qubits.dps;true;3h3m51s;3GB
+database/slow/QBC_4qubits2.dps;true;1s;111MB
+database/slow/QBC_4qubits.dps;false;1s;129MB
+database/slow/QBC_6qubits2.dps;true;4m53s;2GB
+database/slow/QBC_6qubits.dps;false;1s;91MB
+database/slow/YahalomLowe.dps;true;1h37m42s;4GB

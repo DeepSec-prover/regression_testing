@@ -1,0 +1,25 @@
+Version 1.02 - Test type slow
+database/slow/AKA-5sessions.dps;true;1h36m36s
+database/slow/BAC-5sessions-2fresh.dps;false
+database/slow/BAC-5sessions-2fresh-inclusion.dps;true;13m30s
+database/slow/BAC-5sessions-3fresh.dps;true;10h56m53s
+database/slow/BAC-5sessions-3fresh-inclusion.dps;true;48m58s
+database/slow/DenningSacco-11sessions-4dishonests.dps;true;17h37m51s
+database/slow/Helios_revote_ZKP42.dps;true;16m39s
+database/slow/Helios_revote_ZKP51.dps;true;12m36s
+database/slow/Helios_revote_ZKPmax.dps;true;3h53m1s
+database/slow/DenningSacco-18sessions-6dishonests.dps;true;2h11m1s
+database/slow/Helios_revote_ZKP11.dps;true;9m54s
+database/slow/Helios_revote_ZKP21.dps;true;2h45m7s
+database/slow/PA-anonimity.dps;true;2h56s
+database/slow/PA-unlinkability.dps;true;2h53m16s
+database/slow/PrivateAuthentication.dps;true;4s
+database/slow/QBC_10qubits2.dps;false;2m37s
+database/slow/QBC_10qubits.dps;true;4m47s
+database/slow/QBC_11qubits2.dps;false;23m53s
+database/slow/QBC_11qubits.dps;true;26m4s
+database/slow/QBC_4qubits2.dps
+database/slow/QBC_4qubits.dps
+database/slow/QBC_6qubits2.dps
+database/slow/QBC_6qubits.dps
+database/slow/YahalomLowe.dps;true;2h47m7s
