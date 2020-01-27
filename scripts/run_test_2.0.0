@@ -1,6 +1,11 @@
 #!/bin/bash
 
 function run_fast_tests {
+  if [ ! -f raw_outputs/fast_$1.txt ]
+  then
+    echo "" > raw_outputs/fast_$1.txt;
+  fi
+
   for file in database/fast/*.dps; do
     grep_result=$(grep -c "$file" raw_outputs/fast_$1.txt);
     if [ $grep_result -eq 0 ]
@@ -14,6 +19,11 @@ function run_fast_tests {
 }
 
 function run_medium_tests {
+  if [ ! -f raw_outputs/medium_$1.txt ]
+  then
+    echo "" > raw_outputs/medium_$1.txt;
+  fi
+
   for file in database/medium/*.dps; do
     grep_result=$(grep -c "$file" raw_outputs/medium_$1.txt);
     if [ $grep_result -eq 0 ]
@@ -26,6 +36,11 @@ function run_medium_tests {
 }
 
 function run_slow_tests {
+  if [ ! -f raw_outputs/slow_$1.txt ]
+  then
+    echo "" > raw_outputs/slow_$1.txt;
+  fi
+
   for file in database/slow/*.dps; do
     grep_result=$(grep -c "$file" raw_outputs/slow_$1.txt);
     if [ $grep_result -eq 0 ]
@@ -37,6 +52,10 @@ function run_slow_tests {
 }
 
 function run_above_tests {
+  if [ ! -f raw_outputs/above_$1.txt ]
+  then
+    echo "" > raw_outputs/above_$1.txt;
+  fi
   for file in database/above/*.dps; do
     grep_result=$(grep -c "$file" raw_outputs/above_$1.txt);
     if [ $grep_result -eq 0 ]
