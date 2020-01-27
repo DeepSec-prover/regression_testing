@@ -3,9 +3,13 @@
 function run_fast_tests {
   echo Version $1 > raw_outputs/fast_$1.txt;
   for file in database/fast/*.dps; do
-    deepsec -j 1000 "$file" >> raw_outputs/fast_$1.txt;
-    deepsec -j 1000 -s classic "$file" >> raw_outputs/fast_$1.txt;
-    deepsec -d false "$file" >> raw_outputs/fast_$1.txt;
+    grep_result=$(grep -c $file raw_outputs/fast_$1.txt);
+    if [ $grep_result -eq 0  ]
+    then
+      deepsec -j 1000 "$file" >> raw_outputs/fast_$1.txt;
+      deepsec -j 1000 -s classic "$file" >> raw_outputs/fast_$1.txt;
+      deepsec -d false "$file" >> raw_outputs/fast_$1.txt;
+    fi
   done;
   scripts/cleanup raw_outputs/fast_$1.txt;
 }
@@ -13,8 +17,12 @@ function run_fast_tests {
 function run_medium_tests {
   echo Version $1 > raw_outputs/medium_$1.txt;
   for file in database/medium/*.dps; do
-    deepsec -j 1000 "$file" >> raw_outputs/medium_$1.txt;
-    deepsec -j 1000 -s classic "$file" >> raw_outputs/medium_$1.txt;
+    grep_result=$(grep -c $file raw_outputs/medium_$1.txt);
+    if [ $grep_result -eq 0  ]
+    then
+      deepsec -j 1000 "$file" >> raw_outputs/medium_$1.txt;
+      deepsec -j 1000 -s classic "$file" >> raw_outputs/medium_$1.txt;
+    fi
   done;
   scripts/cleanup raw_outputs/medium_$1.txt;
 }
@@ -22,7 +30,11 @@ function run_medium_tests {
 function run_slow_tests {
   echo Version $1 > raw_outputs/slow_$1.txt;
   for file in database/slow/*.dps; do
-    deepsec -j 1000 "$file" >> raw_outputs/slow_$1.txt;
+    grep_result=$(grep -c $file raw_outputs/slow_$1.txt);
+    if [ $grep_result -eq 0  ]
+    then
+      deepsec -j 1000 "$file" >> raw_outputs/slow_$1.txt;
+    fi
   done;
   scripts/cleanup raw_outputs/slow_$1.txt;
 }
@@ -30,7 +42,11 @@ function run_slow_tests {
 function run_above_tests {
   echo Version $1 > raw_outputs/above_$1.txt;
   for file in database/above/*.dps; do
-    deepsec -j 1000 "$file" >> raw_outputs/above_$1.txt;
+    grep_result=$(grep -c $file raw_outputs/above_$1.txt);
+    if [ $grep_result -eq 0  ]
+    then
+      deepsec -j 1000 "$file" >> raw_outputs/above_$1.txt;
+    fi
   done;
   scripts/cleanup raw_outputs/above_$1.txt;
 }
