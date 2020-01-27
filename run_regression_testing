@@ -20,7 +20,8 @@
 if [ \( \
       \( .$1 != .1.02 \) -a \
       \( .$1 != .2.0.0-rc \) -a \
-      \( .$1 != .v2.0.0-beta \) \
+      \( .$1 != .v2.0.0-beta \) -a \
+      \( .$1 != .fix_authorised_block \) \
     \) -o \( \
       \( .$2 != .all \) -a  \
       \( .$2 != .slow \) -a \
@@ -33,7 +34,7 @@ if [ \( \
     \) ]
 then
 	echo  Usage: run_regression_testing "<version>" "<type>"
-	echo  where "<version>" can be 1.02, 2.0.0-rc, v2.0.0-beta
+	echo  where "<version>" can be 1.02, 2.0.0-rc, v2.0.0-beta, fix_authorised_block
 	echo  where "<type>" can be all, fast, medium, slow, above, all
   echo  Version "1.02" cannot be used with the type "above"
 	exit 2
