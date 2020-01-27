@@ -2,8 +2,8 @@
 
 function run_fast_tests {
   for file in database/fast/*.dps; do
-    grep_result=$(grep -c $file raw_outputs/fast_1.02.txt);
-    if [ $grep_result -eq 0  ]
+    grep_result=$(grep -c "$file" raw_outputs/fast_1.02.txt);
+    if [ $grep_result -eq 0 ]
     then
       deepsec -distributed 20 -nb_sets 1000 "$file" >> raw_outputs/fast_1.02.txt;
       deepsec -distributed 20 -nb_sets 1000 -semantics Classic "$file" >> raw_outputs/fast_1.02.txt;
@@ -15,7 +15,7 @@ function run_fast_tests {
 
 function run_medium_tests {
   for file in database/medium/*.dps; do
-    grep_result=$(grep -c $file raw_outputs/medium_1.02.txt);
+    grep_result=$(grep -c "$file" raw_outputs/medium_1.02.txt);
     if [ $grep_result -eq 0 ]
     then
       deepsec -distributed 20 -nb_sets 1000 "$file" >> raw_outputs/medium_1.02.txt;
@@ -27,7 +27,7 @@ function run_medium_tests {
 
 function run_slow_tests {
   for file in database/slow/*.dps; do
-    grep_result=$(grep -c $file raw_outputs/slow_1.02.txt);
+    grep_result=$(grep -c "$file" raw_outputs/slow_1.02.txt);
     if [ $grep_result -eq 0 ]
     then
       deepsec -distributed 20 -nb_sets 1000 "$file" >> raw_outputs/slow_1.02.txt;
