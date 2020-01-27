@@ -16,7 +16,6 @@ let colour_to_int = function
   | Black -> 0 | Red     -> 1 | Green -> 2 | Yellow -> 3
   | Blue  -> 4 | Magenta -> 5 | Cyan  -> 6 | White  -> 7
 
-
 let coloured_terminal_text colour deco text =
   let deco_str =
     List.fold_left (fun acc decoration -> match decoration with
@@ -26,7 +25,6 @@ let coloured_terminal_text colour deco text =
   in
 
   Printf.sprintf "%s\027[3%dm%s\027[0m" deco_str (colour_to_int colour) text
-
 
 type info =
   | Good of bool * string
@@ -94,7 +92,7 @@ let rec compare_two_by_two title v_l (s_l:string list) i_l = match i_l with
 
 let format_time t =
   let regex_m = Str.regexp "m" in
-  let regex_h = Str.regexp "t" in
+  let regex_h = Str.regexp "h" in
 
   let t1 = Str.global_replace regex_m "min " t in
   Str.global_replace regex_h "h " t1
@@ -120,13 +118,28 @@ let rec record_time i title i_l_l =
       record_time (i+1) title q_i_l_l
     end
 
-let compare_one_line_in_files version_list line_str line_list =
+let check_title version_list one_result_per_version =
+  let v_0 = List.hd version_list in
+  let title = fst (List.hd one_result_per_version) in
 
-  let title = List.hd (List.hd line_list) in
-  if List.exists (fun l -> title <> List.hd l) line_list
-  then failwith "Unexpected mismatch of title";
+  let rec explore v_l result_l = match v_l,result_l with
+    | [],[] -> ()
+    | [],_ | _, [] -> failwith "Unexpected case"
+    | _ :: q_v, (t,_)::q_r when title = t -> explore q_v q_r
+    | v::_, (t,_)::_ ->
+        if compare title t < 0
+        then failwith (Printf.sprintf "The test file %s is missing for version %s" title v)
+        else failwith (Printf.sprintf "The test file %s is missing for version %s" t v_0)
+  in
 
-  let main_line_list = List.map (fun l -> List.tl l) line_list in
+  explore version_list one_result_per_version
+
+let compare_one_line_in_files version_list one_result_per_version =
+
+  let title = fst (List.hd one_result_per_version) in
+  check_title version_list one_result_per_version;
+
+  let main_line_list = List.map (fun (_,l) -> l) one_result_per_version in
 
   let info_lists =
     List.map2 (fun version line ->
@@ -136,19 +149,24 @@ let compare_one_line_in_files version_list line_str line_list =
     ) version_list main_line_list
   in
 
+  let line_str =
+    List.map (fun (t,l) ->
+      String.concat ";" (t::l)
+    ) one_result_per_version
+  in
+
   if compare_two_by_two title version_list line_str info_lists
   then record_time 1 title info_lists
 
-let rec compare_all_files version_list line_str_list =
-  if List.hd line_str_list = []
+let rec compare_all_files version_list (result_list_list:(string * string list) list list) =
+  if List.hd result_list_list = []
   then ()
   else
     begin
-      let line_str_q = List.map (fun l -> List.tl l) line_str_list in
-      let line_str = List.map (fun l -> List.hd l) line_str_list in
-      let line_list = List.map (fun l -> String.split_on_char ';' (List.hd l)) line_str_list in
-      compare_one_line_in_files version_list line_str line_list;
-      compare_all_files version_list line_str_q
+      let result_list_list_q = List.map (fun l -> List.tl l) result_list_list in
+      let one_result_per_version = List.map (fun l -> List.hd l) result_list_list in
+      compare_one_line_in_files version_list one_result_per_version;
+      compare_all_files version_list result_list_list_q
     end
 
 let rec display_problematic_files version_list problem_files = match version_list with
@@ -192,12 +210,16 @@ let get_files v t =
     try
       while true do
         let l = input_line in_ch in
-        lines := l::!lines
+        if l <> ""
+        then
+          let values = String.split_on_char ';' l in
+          let title = List.hd values in
+          lines := (title,List.tl values)::!lines
       done
     with End_of_file -> ()
   end;
 
-  List.rev !lines
+  List.sort (fun (t1,_) (t2,_) -> compare t1 t2) !lines
 
 let get_all_files_one_version exclude_above v t =
   if t = "all"
@@ -227,6 +249,7 @@ let get_all_files_and_version v1 v2 type_file =
       get_all_files_one_version exclude_above v type_file
     ) version_list
   in
+
   version_list,files
 
 let apply_comparaison v1 v2 type_file =
@@ -236,7 +259,6 @@ let apply_comparaison v1 v2 type_file =
   display_problematic_files v_list !problematic_files;
   print_string "\n";
   display_record_time v_list
-
 
 let _ = match Array.length Sys.argv with
   | 2 ->
