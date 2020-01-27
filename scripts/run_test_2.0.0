@@ -1,7 +1,6 @@
 #!/bin/bash
 
 function run_fast_tests {
-  echo Version $1 > raw_outputs/fast_$1.txt;
   for file in database/fast/*.dps; do
     grep_result=$(grep -c $file raw_outputs/fast_$1.txt);
     if [ $grep_result -eq 0  ]
@@ -15,7 +14,6 @@ function run_fast_tests {
 }
 
 function run_medium_tests {
-  echo Version $1 > raw_outputs/medium_$1.txt;
   for file in database/medium/*.dps; do
     grep_result=$(grep -c $file raw_outputs/medium_$1.txt);
     if [ $grep_result -eq 0  ]
@@ -28,7 +26,6 @@ function run_medium_tests {
 }
 
 function run_slow_tests {
-  echo Version $1 > raw_outputs/slow_$1.txt;
   for file in database/slow/*.dps; do
     grep_result=$(grep -c $file raw_outputs/slow_$1.txt);
     if [ $grep_result -eq 0  ]
@@ -40,7 +37,6 @@ function run_slow_tests {
 }
 
 function run_above_tests {
-  echo Version $1 > raw_outputs/above_$1.txt;
   for file in database/above/*.dps; do
     grep_result=$(grep -c $file raw_outputs/above_$1.txt);
     if [ $grep_result -eq 0  ]
