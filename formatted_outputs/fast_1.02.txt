@@ -416,3 +416,12 @@ database/fast/YahalomLowe-6sessions-4dishonest.dps;true;1s
 database/fast/yahalom-paulson-bug.dps;false;0s
 database/fast/yahalom-paulson-bug.dps;false;0s
 database/fast/yahalom-paulson-bug.dps;false;0s
+database/fast/bug5.dps;false;0s
+database/fast/bug5.dps;false;0s
+database/fast/bug5.dps;false;0s
+database/fast/bug6.dps;false
+database/fast/bug6.dps;false
+database/fast/bug6.dps;false;0s
+database/fast/bug7.dps;true;0s
+database/fast/bug7.dps;true;0s
+database/fast/bug7.dps;true;0s

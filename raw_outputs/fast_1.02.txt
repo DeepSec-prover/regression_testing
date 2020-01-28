@@ -18296,3 +18296,265 @@ Action-determinate processes detected...
 Query 1: Processes not equivalent.
 Running time: 0s.
 Additional informations on the HTML interface.
+[1mDeepSec - DEciding Equivalence Properties for SECurity protocols(B[m
+Version: 1.02
+Website: https://deepsec-prover.github.io
+Git info: branch (HEAD, hash 91028a20d511f145b499009ce57cdf406abdb660
+Opening file database/fast/bug5.dps
+Executing the queries...
+
+Executing query 1...
+Starting distributed computing...
+Generation of sets of constraint systems...
+Computation completed                                                           
+Found an attack. Checking against trace equivalence...
+Result query 1: The two processes are not in session equivalence as witnessed by the following attack trace.
+We haven't found a similar attack trace against trace equivalence.
+[1;34m
+Origin (RIGHT process):
+[0m
+start();
+   in(<d>,y_12);
+   in(c,z_13);
+   let (z1_14,z2_15) = y_12 in
+      out(c,z1_14)
+   else
+      out(c,y_12)
+|
+   in(c,x_16);
+   out(<d>,x_16)
+
+[1;34m1)[0m [1;34minput on channel c of kI_0 = kI_0
+[0m
+   in(lab=0.0,<d>,y_12);
+   in(c,z_13);
+   let (z1_14,z2_15) = y_12 in
+      out(c,z1_14)
+   else
+      out(c,y_12)
+|
+   [1;31min(lab=0.1,c,x_16)[0m;
+   out(<d>,x_16)
+
+[1;34m2)[0m [1;34minternal communication on channel <d>
+[0m
+   [1;31mout(lab=0.1,<d>,kI_0)[0m
+|
+   [1;31min(lab=0.0,<d>,y_12)[0m;
+   in(c,z_13);
+   let (z1_14,z2_15) = y_12 in
+      out(c,z1_14)
+   else
+      out(c,y_12)
+
+Running time: 0s
+[1mDeepSec - DEciding Equivalence Properties for SECurity protocols(B[m
+Version: 1.02
+Website: https://deepsec-prover.github.io
+Git info: branch (HEAD, hash 91028a20d511f145b499009ce57cdf406abdb660
+Opening file database/fast/bug5.dps
+Executing the queries...
+
+Executing query 1...
+Starting distributed computing...
+Generation of sets of constraint systems...
+Computation completed                                                           
+Found an attack. Checking against trace equivalence...
+Result query 1: The two processes are not in session equivalence as witnessed by the following attack trace.
+We haven't found a similar attack trace against trace equivalence.
+[1;34m
+Origin (RIGHT process):
+[0m
+start();
+   in(<d>,y_12);
+   in(c,z_13);
+   let (z1_14,z2_15) = y_12 in
+      out(c,z1_14)
+   else
+      out(c,y_12)
+|
+   in(c,x_16);
+   out(<d>,x_16)
+
+[1;34m1)[0m [1;34minput on channel c of kI_0 = kI_0
+[0m
+   in(lab=0.0,<d>,y_12);
+   in(c,z_13);
+   let (z1_14,z2_15) = y_12 in
+      out(c,z1_14)
+   else
+      out(c,y_12)
+|
+   [1;31min(lab=0.1,c,x_16)[0m;
+   out(<d>,x_16)
+
+[1;34m2)[0m [1;34minternal communication on channel <d>
+[0m
+   [1;31mout(lab=0.1,<d>,kI_0)[0m
+|
+   [1;31min(lab=0.0,<d>,y_12)[0m;
+   in(c,z_13);
+   let (z1_14,z2_15) = y_12 in
+      out(c,z1_14)
+   else
+      out(c,y_12)
+
+Running time: 0s
+[1mDeepSec - DEciding Equivalence Properties for SECurity protocols(B[m
+Version: 1.02
+Website: https://deepsec-prover.github.io
+Git info: branch (HEAD, hash 91028a20d511f145b499009ce57cdf406abdb660
+Opening file database/fast/bug5.dps
+Executing the queries...
+
+Executing query 1...
+Found an attack. Checking against trace equivalence...
+Result query 1: The two processes are not in session equivalence as witnessed by the following attack trace.
+We haven't found a similar attack trace against trace equivalence.
+[1;34m
+Origin (RIGHT process):
+[0m
+start();
+   in(<d>,y_12);
+   in(c,z_13);
+   let (z1_14,z2_15) = y_12 in
+      out(c,z1_14)
+   else
+      out(c,y_12)
+|
+   in(c,x_16);
+   out(<d>,x_16)
+
+[1;34m1)[0m [1;34minput on channel c of kI_0 = kI_0
+[0m
+   in(lab=0.0,<d>,y_12);
+   in(c,z_13);
+   let (z1_14,z2_15) = y_12 in
+      out(c,z1_14)
+   else
+      out(c,y_12)
+|
+   [1;31min(lab=0.1,c,x_16)[0m;
+   out(<d>,x_16)
+
+[1;34m2)[0m [1;34minternal communication on channel <d>
+[0m
+   [1;31mout(lab=0.1,<d>,kI_0)[0m
+|
+   [1;31min(lab=0.0,<d>,y_12)[0m;
+   in(c,z_13);
+   let (z1_14,z2_15) = y_12 in
+      out(c,z1_14)
+   else
+      out(c,y_12)
+
+Running time: 0s
+[1mDeepSec - DEciding Equivalence Properties for SECurity protocols(B[m
+Version: 1.02
+Website: https://deepsec-prover.github.io
+Git info: branch (HEAD, hash 91028a20d511f145b499009ce57cdf406abdb660
+Opening file database/fast/bug6.dps
+Executing the queries...
+
+Executing query 1...
+Starting distributed computing...
+Generation of sets of constraint systems...
+Computation completed                                                           
+Found an attack. Checking against trace equivalence...
+[1mDeepSec - DEciding Equivalence Properties for SECurity protocols(B[m
+Version: 1.02
+Website: https://deepsec-prover.github.io
+Git info: branch (HEAD, hash 91028a20d511f145b499009ce57cdf406abdb660
+Opening file database/fast/bug6.dps
+Executing the queries...
+
+Executing query 1...
+Starting distributed computing...
+Generation of sets of constraint systems...
+Computation completed                                                           
+Found an attack. Checking against trace equivalence...
+[1mDeepSec - DEciding Equivalence Properties for SECurity protocols(B[m
+Version: 1.02
+Website: https://deepsec-prover.github.io
+Git info: branch (HEAD, hash 91028a20d511f145b499009ce57cdf406abdb660
+Opening file database/fast/bug6.dps
+Executing the queries...
+
+Executing query 1...
+Found an attack. Checking against trace equivalence...
+Result query 1: The two processes are not in session equivalence as witnessed by the following attack trace.
+The two processes are also not in trace equivalence as witnessed by the same attack trace.
+[1;34m
+Origin (LEFT process):
+[0m
+start();
+   in(<d>,y_18);
+   in(c,z_19);
+   out(c,y_18)
+|
+   in(c,x_20);
+   out(<d>,x_20)
+
+[1;34m1)[0m [1;34minput on channel c of (kI_2,kI_1) = (kI_2,kI_1)
+[0m
+   in(lab=0.0,<d>,y_18);
+   in(c,z_19);
+   out(c,y_18)
+|
+   [1;31min(lab=0.1,c,x_20)[0m;
+   out(<d>,x_20)
+
+[1;34m2)[0m [1;34minternal communication on channel <d>
+[0m
+   [1;31mout(lab=0.1,<d>,(kI_2,kI_1))[0m
+|
+   [1;31min(lab=0.0,<d>,y_18)[0m;
+   in(c,z_19);
+   out(c,y_18)
+
+[1;34m3)[0m [1;34minput on channel c of kI_0 = kI_0
+[0m
+[1;31min(lab=0.0,c,z_19)[0m;
+out(c,(kI_2,kI_1))
+
+[1;34m4)[0m [1;34moutput on channel c of (kI_2,kI_1), referred as ax_1
+[0m
+[1;31mout(lab=0.0,c,(kI_2,kI_1))[0m
+
+Running time: 0s
+[1mDeepSec - DEciding Equivalence Properties for SECurity protocols(B[m
+Version: 1.02
+Website: https://deepsec-prover.github.io
+Git info: branch (HEAD, hash 91028a20d511f145b499009ce57cdf406abdb660
+Opening file database/fast/bug7.dps
+Executing the queries...
+
+Executing query 1...
+Starting distributed computing...
+Generation of sets of constraint systems...
+Computation completed                                                           
+Result query 1: The two processes are in session equivalence.
+Running time: 0s
+[1mDeepSec - DEciding Equivalence Properties for SECurity protocols(B[m
+Version: 1.02
+Website: https://deepsec-prover.github.io
+Git info: branch (HEAD, hash 91028a20d511f145b499009ce57cdf406abdb660
+Opening file database/fast/bug7.dps
+Executing the queries...
+
+Executing query 1...
+Starting distributed computing...
+Generation of sets of constraint systems...
+Computation completed                                                           
+Result query 1: The two processes are in session equivalence.
+Running time: 0s
+[1mDeepSec - DEciding Equivalence Properties for SECurity protocols(B[m
+Version: 1.02
+Website: https://deepsec-prover.github.io
+Git info: branch (HEAD, hash 91028a20d511f145b499009ce57cdf406abdb660
+Opening file database/fast/bug7.dps
+Executing the queries...
+
+Executing query 1...
+Result query 1: The two processes are in session equivalence.
+Running time: 0s

@@ -6007,3 +6007,138 @@ Starting verification...
 Starting verification of yahalom-paulson-bug.dps...
 Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 3MB of memory.          
 Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug5.dps...
+
+Starting verification...
+
+Starting verification of bug5.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 78MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug5.dps...
+
+Starting verification...
+
+[1m[33mWarnings[0m on file database/fast/bug5.dps:
+   Line 20, Characters 0-35: The Classic semantics have been set but a session equivalence query can only be verified in the Private semantics. The semantics have been modified accordingly for this query.
+
+Starting verification of bug5.dps...
+Verifying query 1...Verifying query 1... [round 1 jobs generation: 1; minimum nb of jobs required: 1000;  run time: 1s]          Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in 1s using 78MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug5.dps...
+
+Starting verification...
+
+Starting verification of bug5.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 3MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug6.dps...
+
+Starting verification...
+
+Starting verification of bug6.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot session equivalent[0m. Verified in < 1s using 78MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug6.dps...
+
+Starting verification...
+
+[1m[33mWarnings[0m on file database/fast/bug6.dps:
+   Line 21, Characters 0-35: The Classic semantics have been set but a session equivalence query can only be verified in the Private semantics. The semantics have been modified accordingly for this query.
+
+Starting verification of bug6.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot session equivalent[0m. Verified in < 1s using 78MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug6.dps...
+
+Starting verification...
+
+Starting verification of bug6.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot session equivalent[0m. Verified in < 1s using 3MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug7.dps...
+
+Starting verification...
+
+Starting verification of bug7.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 78MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug7.dps...
+
+Starting verification...
+
+[1m[33mWarnings[0m on file database/fast/bug7.dps:
+   Line 21, Characters 0-35: The Classic semantics have been set but a session equivalence query can only be verified in the Private semantics. The semantics have been modified accordingly for this query.
+
+Starting verification of bug7.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 78MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug7.dps...
+
+Starting verification...
+
+Starting verification of bug7.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 3MB of memory.          
+Verification complete.
