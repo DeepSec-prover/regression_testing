@@ -88,7 +88,8 @@ let rec compare_two_by_two title v_l (s_l:string list) i_l = match i_l with
           end
         else true
       in
-      eq_info && compare_two_by_two title v_l' s_l' (t2::q)
+      let eq_info_q = compare_two_by_two title v_l' s_l' (t2::q) in
+      eq_info && eq_info_q
 
 let format_time t =
   let regex_m = Str.regexp "m" in
@@ -102,17 +103,19 @@ let rec record_time i title i_l_l =
   then ()
   else
     begin
+      let todo = ref false in
       let (time_l,above_min,q_i_l_l) =
         List.fold_right (fun i_l (acc_t,acc_above,acc_q) -> match List.hd i_l with
           | Error -> (acc_t,acc_above,(List.tl i_l)::acc_q)
-          | Good(_,t) ->
+          | Good(b,t) ->
+              if b then todo := true;
               if String.contains t 'm' || String.contains t 'm'
               then ((format_time t)::acc_t,true,(List.tl i_l)::acc_q)
               else ((format_time t)::acc_t,acc_above,(List.tl i_l)::acc_q)
         ) i_l_l ([],false,[])
       in
 
-      if above_min
+      if above_min && !todo
       then recorded_time := (String.concat ";" (title :: string_of_int i :: time_l)) :: !recorded_time;
 
       record_time (i+1) title q_i_l_l
