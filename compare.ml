@@ -200,7 +200,7 @@ let display_record_time version_list =
       List.iter (fun str -> Printf.printf "%s\n" str) !recorded_time
     end
 
-let versions = ["1.02";"2.0.0-rc";"v2.0.0-beta";"fix_authorised_block"]
+let versions = ["1.02";"2.0.0-rc";"v2.0.0-beta";"fix_authorised_block";"fix_bug_59"]
 let type_files = ["fast";"medium";"slow";"above"]
 
 let get_files v t =
