@@ -425,3 +425,6 @@ database/fast/bug6.dps;false;0s
 database/fast/bug7.dps;true;0s
 database/fast/bug7.dps;true;0s
 database/fast/bug7.dps;true;0s
+database/fast/bug_59.dps
+database/fast/bug_59.dps
+database/fast/bug_59.dps

@@ -6142,3 +6142,45 @@ Starting verification...
 Starting verification of yahalom-paulson-bug.dps...
 Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 3MB of memory.          
 Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-beta1
+    Git hash: ac9b80a4af938a7bfa097885b509aa918ab3ed8e
+    Git branch: fix_authorised_block
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_59.dps...
+
+Starting verification...
+
+Starting verification of bug_59.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 78MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-beta1
+    Git hash: ac9b80a4af938a7bfa097885b509aa918ab3ed8e
+    Git branch: fix_authorised_block
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_59.dps...
+
+Starting verification...
+
+Starting verification of bug_59.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 78MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-beta1
+    Git hash: ac9b80a4af938a7bfa097885b509aa918ab3ed8e
+    Git branch: fix_authorised_block
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_59.dps...
+
+Starting verification...
+
+Starting verification of bug_59.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 3MB of memory.          
+Verification complete.

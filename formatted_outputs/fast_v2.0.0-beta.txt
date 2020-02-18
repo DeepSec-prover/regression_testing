@@ -425,3 +425,6 @@ database/fast/bug6.dps;false;1s;3MB
 database/fast/bug7.dps;true;1s;78MB
 database/fast/bug7.dps;true;1s;78MB
 database/fast/bug7.dps;true;1s;3MB
+database/fast/bug_59.dps;false;1s;78MB
+database/fast/bug_59.dps;false;1s;78MB
+database/fast/bug_59.dps;false;1s;3MB

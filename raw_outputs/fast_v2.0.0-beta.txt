@@ -6142,3 +6142,45 @@ Starting verification...
 Starting verification of bug7.dps...
 Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 3MB of memory.          
 Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_59.dps...
+
+Starting verification...
+
+Starting verification of bug_59.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 78MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_59.dps...
+
+Starting verification...
+
+Starting verification of bug_59.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 78MB of memory.          
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0-alpha5
+    Git hash: 54e9e8f6064a201193e238f28848783896595911
+    Git branch: HEAD detached at v2.0.0-beta
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_59.dps...
+
+Starting verification...
+
+Starting verification of bug_59.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 3MB of memory.          
+Verification complete.
