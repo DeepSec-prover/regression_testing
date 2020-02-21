@@ -85,8 +85,6 @@ database/medium/IO_YahalomLowe.dps;true;1m12s;208MB
 database/medium/IO_YahalomLowe.dps;true;2m5s;200MB
 database/medium/loli_destroyer2.dps;true;1s;78MB
 database/medium/loli_destroyer2.dps;true;1s;78MB
-database/medium/loli_destroyer.dps;true;5m28s;2GB
-database/medium/loli_destroyer.dps
 database/medium/NSL-8sessions-4dishonest.dps;true;8s;90MB
 database/medium/NSL-8sessions-4dishonest.dps;true;7s;90MB
 database/medium/NSL.dps;true;13s;92MB
