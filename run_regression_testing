@@ -18,6 +18,7 @@
 # The type 'above' cannot be applied for 1.02. The type 'all' run all the other types.
 
 if [ \( \
+      \( .$1 != .all \) -a \
       \( .$1 != .1.02 \) -a \
       \( .$1 != .2.0.0-rc \) -a \
       \( .$1 != .v2.0.0-beta \) -a \
@@ -39,7 +40,7 @@ if [ \( \
     \) ]
 then
 	echo  Usage: run_regression_testing "<version>" "<type>"
-	echo  where "<version>" can be 1.02, 2.0.0-rc, v2.0.0-beta, fix_authorised_block, fix_bug_59, fix_bug_67_to_72, master
+	echo  where "<version>" can be all or one of the following 1.02, 2.0.0-rc, v2.0.0-beta, fix_authorised_block, fix_bug_59, fix_bug_67_to_72, master
 	echo  where "<type>" can be all, fast, medium, slow, above, all
   echo  Version "1.02" cannot be used with the type "above"
 	exit 2
@@ -54,7 +55,15 @@ cd ../regression_testing ;
 if [ .$1 = .1.02 ]
 then
   scripts/run_test_1.02 $2;
-
 else
-  scripts/run_test_2.0.0 $2 $1;
+  if [ .$1 = .all ]
+  then
+    scripts/run_test_2.0.0 $2 2.0.0-rc;
+    scripts/run_test_2.0.0 $2 v2.0.0-beta;
+    scripts/run_test_2.0.0 $2 fix_authorised_block;
+    scripts/run_test_2.0.0 $2 fix_bug_59;
+    scripts/run_test_2.0.0 $2 fix_bug_67_to_72;
+  else
+    scripts/run_test_2.0.0 $2 $1;
+  fi
 fi
