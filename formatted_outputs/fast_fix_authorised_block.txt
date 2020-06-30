@@ -428,3 +428,13 @@ database/fast/yahalom-paulson-bug.dps;false;1s;3MB
 database/fast/bug_59.dps;false;1s;78MB
 database/fast/bug_59.dps;false;1s;78MB
 database/fast/bug_59.dps;false;1s;3MB
+database/fast/bug_59_2.dps;false;1s;4MB
+database/fast/bug_59_2.dps;false;1s;5MB
+database/fast/bug_59_2.dps;false;1s;4MB
+database/fast/get_public_key_bug.dps;internal error
+database/fast/get_public_key_bug.dps;internal error
+database/fast/get_public_key_bug.dps;internal error
+database/fast/pap-1-session.dps;internal error
+database/fast/pap-1-session.dps;internal error
+database/fast/pap-1-session.dps;internal error
+
