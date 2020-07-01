@@ -46,28 +46,32 @@ then
 	exit 2
 fi
 
-cd ../deepsec ;
-make clean ;
-git checkout $1;
-git pull
-make;
-cd ../regression_testing ;
+function change_version {
+  cd ../deepsec ;
+  make clean ;
+  git checkout $1;
+  git pull ;
+  make ;
+  cd ../regression_testing ;
 
-if [ .$1 = .1.02 ]
-then
-  scripts/run_test_1.02 $2;
-else
-  if [ .$1 = .all ]
+  if [ .$1 = .1.02 ]
   then
-    scripts/run_test_2.0.0 $2 2.0.0-rc;
-    scripts/run_test_2.0.0 $2 v2.0.0-beta;
-    scripts/run_test_2.0.0 $2 fix_authorised_block;
-    scripts/run_test_2.0.0 $2 fix_bug_59;
-    scripts/run_test_2.0.0 $2 v2.0.0-beta6;
-    scripts/run_test_2.0.0 $2 v2.0.0-beta7;
-    scripts/run_test_2.0.0 $2 v2.0.1;
-    scripts/run_test_2.0.0 $2 fix_bug_67_to_72;
+    scripts/run_test_1.02 $2;
   else
     scripts/run_test_2.0.0 $2 $1;
   fi
+}
+
+if [ .$1 = .all ]
+then
+  change_version 2.0.0-rc $2;
+  change_version v2.0.0-beta $2;
+  change_version fix_authorised_block $2;
+  change_version fix_bug_59 $2;
+  change_version v2.0.0-beta6 $2;
+  change_version v2.0.0-beta7 $2;
+  change_version v2.0.1 $2;
+  change_version fix_bug_67_to_72 $2;
+else
+  change_version $1 $2
 fi
