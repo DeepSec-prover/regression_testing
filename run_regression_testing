@@ -64,6 +64,7 @@ function change_version {
 
 if [ .$1 = .all ]
 then
+  change_version 1.02 $2;
   change_version 2.0.0-rc $2;
   change_version v2.0.0-beta $2;
   change_version fix_authorised_block $2;
