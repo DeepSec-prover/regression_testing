@@ -23,9 +23,9 @@ if [ \( \
       \( .$1 != .2.0.0-rc \) -a \
       \( .$1 != .v2.0.0-beta \) -a \
       \( .$1 != .fix_authorised_block \) -a \
-      \( .$1 != .master \) -a \
       \( .$1 != .v2.0.0-beta6 \) -a \
       \( .$1 != .v2.0.0-beta7 \) -a \
+      \( .$1 != .v2.0.1 \) -a \
       \( .$1 != .fix_bug_67_to_72 \) -a \
       \( .$1 != .fix_bug_59 \) \
     \) -o \( \
@@ -40,7 +40,7 @@ if [ \( \
     \) ]
 then
 	echo  Usage: run_regression_testing "<version>" "<type>"
-	echo  where "<version>" can be all or one of the following 1.02, 2.0.0-rc, v2.0.0-beta, fix_authorised_block, fix_bug_59, fix_bug_67_to_72, master
+	echo  where "<version>" can be all or one of the following 1.02, 2.0.0-rc, v2.0.0-beta, fix_authorised_block, fix_bug_59, v2.0.0-beta6, v2.0.0-beta7, v2.0.1, fix_bug_67_to_72
 	echo  where "<type>" can be all, fast, medium, slow, above, all
   echo  Version "1.02" cannot be used with the type "above"
 	exit 2
@@ -49,6 +49,7 @@ fi
 cd ../deepsec ;
 make clean ;
 git checkout $1;
+git pull
 make;
 cd ../regression_testing ;
 
@@ -62,6 +63,9 @@ else
     scripts/run_test_2.0.0 $2 v2.0.0-beta;
     scripts/run_test_2.0.0 $2 fix_authorised_block;
     scripts/run_test_2.0.0 $2 fix_bug_59;
+    scripts/run_test_2.0.0 $2 v2.0.0-beta6;
+    scripts/run_test_2.0.0 $2 v2.0.0-beta7;
+    scripts/run_test_2.0.0 $2 v2.0.1;
     scripts/run_test_2.0.0 $2 fix_bug_67_to_72;
   else
     scripts/run_test_2.0.0 $2 $1;
