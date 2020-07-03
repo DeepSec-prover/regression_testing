@@ -6184,3 +6184,530 @@ Starting verification...
 Starting verification of bug_59.dps...
 Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 3MB of memory.     
 Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_59_2.dps...
+
+Starting verification...
+
+Starting verification of bug_59_2.dps...
+Verifying query 1...Verifying query 1... [round 1 jobs verification:: 0% (1464 jobs remaning); run time: < 1s]     Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 88MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_59_2.dps...
+
+Starting verification...
+
+Starting verification of bug_59_2.dps...
+Verifying query 1...Verifying query 1... [round 1 jobs verification:: 0% (1525 jobs remaning); run time: < 1s]     Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 84MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_59_2.dps...
+
+Starting verification...
+
+Starting verification of bug_59_2.dps...
+Verifying query 1...Verifying query 1... [jobs verification: 7% (500 jobs remaning); run time: 1s]     Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in 1s using 5MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_67_2.dps...
+
+Starting verification...
+
+Starting verification of bug_67_2.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verifying query 2...Result query 2: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_67_2.dps...
+
+Starting verification...
+
+[1m[33mWarnings[0m on file database/fast/bug_67_2.dps:
+   Line 11, Characters 0-25: The Classic semantics have been set but a session equivalence query can only be verified in the Private semantics. The semantics have been modified accordingly for this query.
+
+Starting verification of bug_67_2.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verifying query 2...Result query 2: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_67_2.dps...
+
+Starting verification...
+
+Starting verification of bug_67_2.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 3MB of memory.     
+Verifying query 2...Result query 2: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 3MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_67.dps...
+
+Starting verification...
+
+Starting verification of bug_67.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verifying query 2...Result query 2: The two processes are [1m[32mtrace equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_67.dps...
+
+Starting verification...
+
+[1m[33mWarnings[0m on file database/fast/bug_67.dps:
+   Line 11, Characters 0-25: The Classic semantics have been set but a session equivalence query can only be verified in the Private semantics. The semantics have been modified accordingly for this query.
+
+Starting verification of bug_67.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verifying query 2...Result query 2: The two processes are [1m[32mtrace equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_67.dps...
+
+Starting verification...
+
+Starting verification of bug_67.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32msession equivalent[0m. Verified in < 1s using 3MB of memory.     
+Verifying query 2...Result query 2: The two processes are [1m[32mtrace equivalent[0m. Verified in < 1s using 3MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_68.dps...
+
+Starting verification...
+
+Starting verification of bug_68.dps...
+Verifying query 1...Verifying query 1... [round 1 jobs generation: 1; minimum nb of jobs required: 1000;  run time: 1s]     Verifying query 1... [round 1 jobs generation: 896; minimum nb of jobs required: 1000;  run time: 2s]     Verifying query 1... [round 1 jobs verification:: 0% (1092 jobs remaning); run time: 2s]                  Verifying query 1... [round 1 jobs verification:: 38% (676 jobs remaning); run time: 3s]     Verifying query 1... [round 1 jobs verification:: 72% (298 jobs remaning); run time: 4s]     Result query 1: The two processes are [1m[32mtrace equivalent[0m. Verified in 4s using 234MB of memory.     
+Verifying query 2...Verifying query 2... [round 1 jobs generation: 160; minimum nb of jobs required: 1000;  run time: 1s]     Verifying query 2... [round 1 jobs generation: 736; minimum nb of jobs required: 1000;  run time: 2s]     Verifying query 2... [round 1 jobs verification:: 0% (1022 jobs remaning); run time: 2s]                  Result query 2: The two processes are [1m[32msession equivalent[0m. Verified in 2s using 125MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_68.dps...
+
+Starting verification...
+
+[1m[33mWarnings[0m on file database/fast/bug_68.dps:
+   Line 77, Characters 0-27: The Classic semantics have been set but a session equivalence query can only be verified in the Private semantics. The semantics have been modified accordingly for this query.
+
+Starting verification of bug_68.dps...
+Verifying query 1...Verifying query 1... [round 1 jobs generation: 896; minimum nb of jobs required: 1000;  run time: 1s]     Verifying query 1... [round 1 jobs verification:: 0% (1092 jobs remaning); run time: 1s]                  Verifying query 1... [round 1 jobs verification:: 38% (670 jobs remaning); run time: 2s]     Verifying query 1... [round 1 jobs verification:: 72% (304 jobs remaning); run time: 3s]     Result query 1: The two processes are [1m[32mtrace equivalent[0m. Verified in 3s using 239MB of memory.     
+Verifying query 2...Verifying query 2... [round 1 jobs generation: 76; minimum nb of jobs required: 1000;  run time: 1s]     Verifying query 2... [round 1 jobs generation: 592; minimum nb of jobs required: 1000;  run time: 2s]     Verifying query 2... [round 1 jobs verification:: 0% (1024 jobs remaning); run time: 2s]                  Verifying query 2... [round 1 jobs verification:: 52% (484 jobs remaning); run time: 3s]     Result query 2: The two processes are [1m[32msession equivalent[0m. Verified in 3s using 127MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_68.dps...
+
+Starting verification...
+
+Starting verification of bug_68.dps...
+Verifying query 1...Verifying query 1... [jobs verification: 5% (166 jobs remaning); run time: 1s]     Verifying query 1... [jobs verification: 9% (160 jobs remaning); run time: 2s]     Verifying query 1... [jobs verification: 12% (154 jobs remaning); run time: 3s]     Verifying query 1... [jobs verification: 18% (143 jobs remaning); run time: 4s]     Verifying query 1... [jobs verification: 24% (133 jobs remaning); run time: 5s]     Verifying query 1... [jobs verification: 27% (127 jobs remaning); run time: 6s]     Verifying query 1... [jobs verification: 31% (121 jobs remaning); run time: 7s]     Verifying query 1... [jobs verification: 37% (110 jobs remaning); run time: 8s]     Verifying query 1... [jobs verification: 43% (100 jobs remaning); run time: 9s]     Verifying query 1... [jobs verification: 46% (94 jobs remaning); run time: 10s]     Verifying query 1... [jobs verification: 50% (88 jobs remaning); run time: 11s]     Verifying query 1... [jobs verification: 56% (77 jobs remaning); run time: 12s]     Verifying query 1... [jobs verification: 62% (66 jobs remaning); run time: 13s]     Verifying query 1... [jobs verification: 68% (56 jobs remaning); run time: 14s]     Verifying query 1... [jobs verification: 71% (50 jobs remaning); run time: 15s]     Verifying query 1... [jobs verification: 75% (44 jobs remaning); run time: 16s]     Verifying query 1... [jobs verification: 81% (33 jobs remaning); run time: 17s]     Verifying query 1... [jobs verification: 86% (23 jobs remaning); run time: 18s]     Verifying query 1... [jobs verification: 90% (17 jobs remaning); run time: 19s]     Verifying query 1... [jobs verification: 93% (11 jobs remaning); run time: 20s]     Verifying query 1... [jobs verification: 100% (0 jobs remaning); run time: 21s]     [1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_69.dps...
+
+Starting verification...
+
+Starting verification of bug_69.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32mtrace equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verifying query 2...Result query 2: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_69.dps...
+
+Starting verification...
+
+Starting verification of bug_69.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32mtrace equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verifying query 2...Result query 2: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_69.dps...
+
+Starting verification...
+
+Starting verification of bug_69.dps...
+Verifying query 1...Result query 1: The two processes are [1m[32mtrace equivalent[0m. Verified in < 1s using 3MB of memory.     
+Verifying query 2...Result query 2: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 3MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_70.dps...
+
+[1m[4m[31mInternal Error[0m: [display_ui.ml >> of_category] Unexpected case
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_70.dps...
+
+[1m[4m[31mInternal Error[0m: [display_ui.ml >> of_category] Unexpected case
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_70.dps...
+
+[1m[4m[31mInternal Error[0m: [display_ui.ml >> of_category] Unexpected case
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_71.dps...
+
+Starting verification...
+
+Starting verification of bug_71.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: Not_found
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_71.dps...
+
+Starting verification...
+
+Starting verification of bug_71.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: Not_found
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_71.dps...
+
+Starting verification...
+
+Starting verification of bug_71.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: Not_found
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_71_Passive-ActivityTracking-State.dps...
+
+Starting verification...
+
+Starting verification of bug_71_Passive-ActivityTracking-State.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: Not_found
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_71_Passive-ActivityTracking-State.dps...
+
+Starting verification...
+
+Starting verification of bug_71_Passive-ActivityTracking-State.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: Not_found
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_71_Passive-ActivityTracking-State.dps...
+
+Starting verification...
+
+Starting verification of bug_71_Passive-ActivityTracking-State.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: Not_found
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_72_simulator_BAC.dps...
+
+Starting verification...
+
+Starting verification of bug_72_simulator_BAC.dps...
+Verifying query 1...Verifying query 1... [round 1 jobs generation: 1; minimum nb of jobs required: 1000;  run time: 1s]     Verifying query 1... [round 1 jobs verification:: 0% (1080 jobs remaning); run time: 1s]                Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in 1s using 79MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_72_simulator_BAC.dps...
+
+Starting verification...
+
+Starting verification of bug_72_simulator_BAC.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/bug_72_simulator_BAC.dps...
+
+Starting verification...
+
+Starting verification of bug_72_simulator_BAC.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in 8s using 42MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/get_public_key_bug.dps...
+
+Starting verification...
+
+Starting verification of get_public_key_bug.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: [data_structure.ml >> IK.get] Invalid index.
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/get_public_key_bug.dps...
+
+Starting verification...
+
+Starting verification of get_public_key_bug.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: [data_structure.ml >> IK.get] Invalid index.
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/get_public_key_bug.dps...
+
+Starting verification...
+
+Starting verification of get_public_key_bug.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: [data_structure.ml >> IK.get] Invalid index.
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/pap-1-session2.dps...
+
+Starting verification...
+
+Starting verification of pap-1-session2.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: [data_structure.ml >> IK.get] Invalid index.
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/pap-1-session2.dps...
+
+Starting verification...
+
+Starting verification of pap-1-session2.dps...
+Verifying query 1...Result query 1: The two processes are [1m[31mnot trace equivalent[0m. Verified in < 1s using 78MB of memory.     
+Verification complete.
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/pap-1-session2.dps...
+
+Starting verification...
+
+Starting verification of pap-1-session2.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: [data_structure.ml >> IK.get] Invalid index.
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/pap-1-session.dps...
+
+Starting verification...
+
+Starting verification of pap-1-session.dps...
+Verifying query 1...Verifying query 1... [round 1 jobs generation: 1; minimum nb of jobs required: 1000;  run time: 1s]     
+[1m[4m[31mInternal Error[0m: [data_structure.ml >> IK.get] Invalid index.
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/pap-1-session.dps...
+
+Starting verification...
+
+Starting verification of pap-1-session.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: [data_structure.ml >> IK.get] Invalid index.
+Please report the bug to vincent.cheval@loria.fr with the input file and output
+[1m[30mDeepSec - DEciding Equivalence Properties for SECurity protocols[0m
+    Version: 2.0.0
+    Git hash: 8954fd5ad4e49a61e07d88a09c6cf1d362e4b6be
+    Git branch: HEAD detached at 2.0.0-rc
+    Website: https://deepsec-prover.github.io
+
+
+Loading file database/fast/pap-1-session.dps...
+
+Starting verification...
+
+Starting verification of pap-1-session.dps...
+Verifying query 1...
+[1m[4m[31mInternal Error[0m: [data_structure.ml >> IK.get] Invalid index.
+Please report the bug to vincent.cheval@loria.fr with the input file and output

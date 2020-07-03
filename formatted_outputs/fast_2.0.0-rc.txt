@@ -428,3 +428,39 @@ database/fast/bug7.dps;true;1s;3MB
 database/fast/bug_59.dps;false;1s;78MB
 database/fast/bug_59.dps;false;1s;78MB
 database/fast/bug_59.dps;false;1s;3MB
+database/fast/bug_59_2.dps;false;1s;88MB
+database/fast/bug_59_2.dps;false;1s;84MB
+database/fast/bug_59_2.dps;false;1s;5MB
+database/fast/bug_67_2.dps;true;1s;78MB;false;1s;78MB
+database/fast/bug_67_2.dps;true;1s;78MB;false;1s;78MB
+database/fast/bug_67_2.dps;true;1s;3MB;false;1s;3MB
+database/fast/bug_67.dps;true;1s;78MB;true;1s;78MB
+database/fast/bug_67.dps;true;1s;78MB;true;1s;78MB
+database/fast/bug_67.dps;true;1s;3MB;true;1s;3MB
+database/fast/bug_68.dps;true;4s;234MB;true;2s;125MB
+database/fast/bug_68.dps;true;3s;239MB;true;3s;127MB
+database/fast/bug_68.dps
+database/fast/bug_69.dps;true;1s;78MB;false;1s;78MB
+database/fast/bug_69.dps;true;1s;78MB;false;1s;78MB
+database/fast/bug_69.dps;true;1s;3MB;false;1s;3MB
+database/fast/bug_70.dps;internal error
+database/fast/bug_70.dps;internal error
+database/fast/bug_70.dps;internal error
+database/fast/bug_71.dps;internal error
+database/fast/bug_71.dps;internal error
+database/fast/bug_71.dps;internal error
+database/fast/bug_71_Passive-ActivityTracking-State.dps;internal error
+database/fast/bug_71_Passive-ActivityTracking-State.dps;internal error
+database/fast/bug_71_Passive-ActivityTracking-State.dps;internal error
+database/fast/bug_72_simulator_BAC.dps;false;1s;79MB
+database/fast/bug_72_simulator_BAC.dps;false;1s;78MB
+database/fast/bug_72_simulator_BAC.dps;false;8s;42MB
+database/fast/get_public_key_bug.dps;internal error
+database/fast/get_public_key_bug.dps;internal error
+database/fast/get_public_key_bug.dps;internal error
+database/fast/pap-1-session2.dps;internal error
+database/fast/pap-1-session2.dps;false;1s;78MB
+database/fast/pap-1-session2.dps;internal error
+database/fast/pap-1-session.dps;internal error
+database/fast/pap-1-session.dps;internal error
+database/fast/pap-1-session.dps;internal error
