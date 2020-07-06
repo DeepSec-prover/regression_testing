@@ -1,0 +1,7 @@
+Version fix_bug_59 - Test type above
+database/above/AKA-6sessions.dps;true;1s;145MB
+database/above/AKA-6sessions-pure.dps;true;1s;78MB
+database/above/AKA-7sessions.dps;true;1s;182MB
+database/above/AKA-8sessions.dps;true;1s;111MB
+database/above/AKA-9sessions-pure.dps;true;1s;142MB
+database/above/YahalomLowe-9sessions-4dishonest.dps;true;13m39s;92MB
